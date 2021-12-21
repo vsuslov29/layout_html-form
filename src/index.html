@@ -11,72 +11,109 @@
   </head>
 
   <body>
-    <form
-      method="post"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      onsubmit="onSubmit()"
-      autocomplete="off"
-    >
+    <form method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit()"
+      autocomplete="off">
       <fieldset>
         <legend>Personal information</legend>
         <div>
           <label for="surname">Surname:</label>
-          <input id="surname" type="text" maxlength="20">
+          <input 
+            name="surname" 
+            id="surname" 
+            type="text" 
+            maxlength="20"
+          >
         </div>
         <div>
           <label for="name">Name:</label>
-          <input id="name" type="text">
+          <input 
+            name="name" 
+            id="name" 
+            type="text"
+          >
         </div>
         <div>
           <label for="age">How old are You?</label>
-          <input
-            id="age"
-            type="number"
-            min="12"
-            value="12"
+          <input 
+            name="age" 
+            id="age" 
+            type="number" 
+            min="12" 
+            value="12" 
             max="100"
           >
         </div>
         <div>
           <label for="birth">Full date of birth:</label>
-          <input id="birth" type="date">
+          <input 
+            name="birth" 
+            id="birth" 
+            type="date"
+          >
         </div>
         <div>
           <label for="accept" required>I accept the term of the agreement</label>
-          <input id="accept" type="checkbox">
+          <input 
+            name="accept" 
+            id="accept" 
+            type="checkbox"
+          >
         </div>
       </fieldset>
       <fieldset>
         <legend>Registration</legend>
         <div>
           <label for="email">E-mail:</label>
-          <input
-            id="email"
-            type="email"
+          <input 
+            name="email" 
+            id="email" 
+            type="email" 
             placeholder="email@example.com"
           >
         </div>
         <div>
           <label for="password">Password:</label>
-          <input id="password" type="password" minlength="8">
+          <input 
+            name="password" 
+            id="password" 
+            type="password" 
+            minlength="8"
+          >
         </div>
       </fieldset>
       <fieldset>
         <legend>An interesting fact about you!</legend>
         <div>
           <p for="cats">Do you love cats?</p>
-          <input id="yes" type="radio" name="doYouLoveCats">
+          <input 
+            id="yes" 
+            type="radio" 
+            name="doYouLoveCats"
+          >
           <label for="yes">Yes</label>
-          <input id="no" type="radio" name="doYouLoveCats">
+          <input 
+            id="no" 
+            type="radio" 
+            name="doYouLoveCats"
+          >
           <label for="no">No</label><br>
         </div>
         <div>
           <label for="color">What is your favorite color?</label>
-          <input id="color" type="color">
+          <input 
+            name="color" 
+            id="color" 
+            type="color"
+          >
         </div>
         <div>
           <label for="time">What time do you go to bed?</label>
-          <input id="time" type="time" step="2">
+          <input 
+            name="time" 
+            id="time" 
+            type="time" 
+            step="2"
+          >
         </div>
         <div>
           <p>What are your favorite brand of cars?</p>
@@ -88,11 +125,16 @@
         </div>
         <div>
           <label for="range">How do you rate our work?</label>
-          <input id="range" type="range" value="0">
+          <input 
+            name="range" 
+            id="range" 
+            type="range" 
+            value="0"
+          >
         </div>
       </fieldset>
       <fieldset>
-        <legend>Additional info: </legend>
+        <legend>Additional info:</legend>
         <div>
           <label for="textarea">Comments:</label>
           <textarea id="textarea" type="textarea"></textarea>
