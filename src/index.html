@@ -11,51 +11,55 @@
   </head>
 
   <body>
-    <form method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit()"
-      autocomplete="off">
+    <form
+      method="post"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      onsubmit="onSubmit()"
+      autocomplete="off"
+    >
       <fieldset>
         <legend>Personal information</legend>
         <div>
           <label for="surname">Surname:</label>
-          <input 
-            name="surname" 
-            id="surname" 
-            type="text" 
+          <input
+            name="surname"
+            id="surname"
+            type="text"
             maxlength="20"
           >
         </div>
         <div>
           <label for="name">Name:</label>
-          <input 
-            name="name" 
-            id="name" 
+          <input
+            name="name"
+            id="name"
             type="text"
           >
         </div>
         <div>
           <label for="age">How old are You?</label>
-          <input 
-            name="age" 
-            id="age" 
-            type="number" 
-            min="12" 
-            value="12" 
+          <input
+            name="age"
+            id="age"
+            type="number"
+            min="12"
+            value="12"
             max="100"
           >
         </div>
         <div>
           <label for="birth">Full date of birth:</label>
-          <input 
-            name="birth" 
-            id="birth" 
+          <input
+            name="birth"
+            id="birth"
             type="date"
           >
         </div>
         <div>
           <label for="accept" required>I accept the term of the agreement</label>
-          <input 
-            name="accept" 
-            id="accept" 
+          <input
+            name="accept"
+            id="accept"
             type="checkbox"
           >
         </div>
@@ -64,19 +68,19 @@
         <legend>Registration</legend>
         <div>
           <label for="email">E-mail:</label>
-          <input 
-            name="email" 
-            id="email" 
-            type="email" 
+          <input
+            name="email"
+            id="email"
+            type="email"
             placeholder="email@example.com"
           >
         </div>
         <div>
           <label for="password">Password:</label>
-          <input 
-            name="password" 
-            id="password" 
-            type="password" 
+          <input
+            name="password"
+            id="password"
+            type="password"
             minlength="8"
           >
         </div>
@@ -85,33 +89,33 @@
         <legend>An interesting fact about you!</legend>
         <div>
           <p for="cats">Do you love cats?</p>
-          <input 
-            id="yes" 
-            type="radio" 
+          <input
+            id="yes"
+            type="radio"
             name="doYouLoveCats"
           >
           <label for="yes">Yes</label>
-          <input 
-            id="no" 
-            type="radio" 
+          <input
+            id="no"
+            type="radio"
             name="doYouLoveCats"
           >
           <label for="no">No</label><br>
         </div>
         <div>
           <label for="color">What is your favorite color?</label>
-          <input 
-            name="color" 
-            id="color" 
+          <input
+            name="color"
+            id="color"
             type="color"
           >
         </div>
         <div>
           <label for="time">What time do you go to bed?</label>
-          <input 
-            name="time" 
-            id="time" 
-            type="time" 
+          <input
+            name="time"
+            id="time"
+            type="time"
             step="2"
           >
         </div>
@@ -125,10 +129,10 @@
         </div>
         <div>
           <label for="range">How do you rate our work?</label>
-          <input 
-            name="range" 
-            id="range" 
-            type="range" 
+          <input
+            name="range"
+            id="range"
+            type="range"
             value="0"
           >
         </div>
